@@ -34,36 +34,74 @@
 
 /*General Styles */
 
-body{
-    background: var(--clr-light);
-    color:var(--clr-dark);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
 }
 
-img{
-    display: block;
-    max-width: 1000px;
+section{
+    padding: 5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 1000px;
 }
 
 /*Typography */
-h1,h2,h3{
-    line-height: 1.1;
-    margin: 0;
-
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
 }
 
-h1{
-    font-size: var(--fs-h1);
+h1 {
+  font-size: var(--fs-h1);
 }
 
-h2{
-    font-size: var(--fs-h2);
+h2 {
+  font-size: var(--fs-h2);
 }
 
+h3 {
+  font-size: var(--fs-h3);
+}
 
-h3{
-    font-size: var(--fs-h3);
+.intro_title {
+    margin-bottom: .25em;
+}
+
+.intro_title-sub{
+    font-weight: var(--fw-reg);
+}
+
+.intro_title-sub strong{
+    display: block;
+}
+
+.intro_subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.intro_subtitle-sub,
+.about_subtitle-sub {
+  background: var(--clr-accent);
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+
+nav{
+    display: none;
+}
+
+/* Intro section*/
+
+.intro{
+    position: relative;
 }
