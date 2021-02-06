@@ -21,6 +21,9 @@
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
@@ -43,8 +46,8 @@ body {
   line-height: 1.6;
 }
 
-section{
-    padding: 5em 2em;
+section {
+  padding: 5em 2em;
 }
 
 img {
@@ -73,15 +76,15 @@ h3 {
 }
 
 .intro_title {
-    margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
-.intro_title-sub{
-    font-weight: var(--fw-reg);
+.intro_title-sub {
+  font-weight: var(--fw-reg);
 }
 
-.intro_title-sub strong{
-    display: block;
+.intro_title-sub strong {
+  display: block;
 }
 
 .intro_subtitle {
@@ -92,16 +95,54 @@ h3 {
 .intro_subtitle-sub,
 .about_subtitle-sub {
   background: var(--clr-accent);
+  padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
 
-nav{
-    display: none;
+nav {
+  display: none;
 }
 
 /* Intro section*/
 
-.intro{
+.intro {
+  position: relative;
+}
+
+.intro-img {
+  box-shadow: var(--bs);
+}
+
+.intro_subtitle-sub{
+  display: inline-block;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro-img {
+    grid-area: img;
+    min-width: 250px;
+    z-index: 2;
+  }
+
+  .intro_subtitle-sub {
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
     position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5rem);
+  }
 }
