@@ -55,29 +55,28 @@ img {
   max-width: 100%;
 }
 
-:focus{
+:focus {
   outline: 3px solid var(--clr-accent);
   outline-offset: 3px;
 }
 
-.btn{
+.btn {
   display: inline-block;
-  padding: .5em 2.5em;
+  padding: 0.5em 2.5em;
   background: var(--clr-accent);
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
   transform: scale(1.2);
 }
-
 
 /*Typography */
 h1,
@@ -138,7 +137,7 @@ nav {
   box-shadow: var(--bs);
 }
 
-.intro_subtitle-sub{
+.intro_subtitle-sub {
   display: inline-block;
 }
 
@@ -173,7 +172,7 @@ nav {
 
 /*My services section*/
 
-.my-services{
+.my-services {
   background-color: var(--clr-dark);
   background-image: url(../images/screen_blur.jpg);
   background-size: cover;
@@ -181,12 +180,12 @@ nav {
   text-align: center;
 }
 
-.services_title-sub{
-  color:var(--clr-accent);
+.services_title-sub {
+  color: var(--clr-accent);
   position: relative;
 }
 
-.services_title-sub::after{
+.services_title-sub::after {
   content: "";
   display: block;
   width: 2em;
@@ -196,17 +195,17 @@ nav {
   opacity: 0.5;
 }
 
-.services{
+.services {
   margin-bottom: 4em;
 }
 
-.service{
+.service {
   max-width: 500px;
   margin: 0 auto;
 }
 
-@media (min-width: 800px){
-  .services{
+@media (min-width: 800px) {
+  .services {
     display: flex;
     max-width: 1000px;
     margin-left: auto;
@@ -215,5 +214,35 @@ nav {
 
   .service + .service {
     margin-left: 2em;
+  }
+}
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+      column-gap: 2em;
+  }
+
+  .about_title-sub {
+    grid-area: title;
+  }
+
+  .about_subtitle-sub{
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+
+  .about-me_img {
+    grid-area: img;
   }
 }
