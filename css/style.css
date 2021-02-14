@@ -328,9 +328,11 @@ header {
   }
 
   .service + .service {
-    margin-left: 2em;
+    margin-left: 8%;
   }
 }
+
+
 
 .about-me {
   max-width: 1000px;
