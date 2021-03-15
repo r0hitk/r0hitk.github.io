@@ -413,6 +413,9 @@ header {
   .portfolio{
     flex-flow: column;
     justify-content: space-between;
+  }
+
+  .portfolio_img{
     margin-bottom: 5%;
   }
 }
