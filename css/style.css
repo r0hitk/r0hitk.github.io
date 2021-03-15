@@ -37,7 +37,7 @@
 
 /*General Styles */
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -200,15 +200,15 @@ header {
   position: fixed;
 }
 
-.nav-open .hamburger{
-  transform: rotate(.625turn);
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
 }
 
-.nav-open .hamburger::before{
+.nav-open .hamburger::before {
   transform: rotate(90deg) translateX(-6px);
 }
 
-.nav-open .hamburger::after{
+.nav-open .hamburger::after {
   opacity: 0;
 }
 
@@ -332,8 +332,6 @@ header {
   }
 }
 
-
-
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
@@ -379,7 +377,7 @@ header {
   text-align: center;
 }
 
-.portfolio{
+.portfolio {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -405,18 +403,18 @@ header {
   opacity: 0.75;
 }
 
-.temp{
+.temp {
   margin-left: 5%;
 }
 
-@media(max-width:799px){
-  .portfolio{
+@media (max-width: 799px) {
+  .portfolio {
     flex-flow: column;
     justify-content: space-between;
   }
-
-  .portfolio_img{
+  .portfolio_item {
     margin-bottom: 5%;
+    width: 100%;
   }
 }
 
