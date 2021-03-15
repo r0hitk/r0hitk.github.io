@@ -408,6 +408,12 @@ header {
   margin-left: 5%;
 }
 
+@media(max-width:799px){
+  .portfolio{
+    flex-flow: column;
+  }
+}
+
 /* .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
