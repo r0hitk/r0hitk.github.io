@@ -411,6 +411,7 @@ header {
 @media(max-width:799px){
   .portfolio{
     flex-flow: column;
+    justify-content: space-between;
   }
 }
 
