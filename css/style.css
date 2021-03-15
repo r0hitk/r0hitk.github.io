@@ -382,6 +382,7 @@ header {
 .portfolio{
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .portfolio_item {
@@ -412,6 +413,7 @@ header {
   .portfolio{
     flex-flow: column;
     justify-content: space-between;
+    margin-bottom: 5%;
   }
 }
 
