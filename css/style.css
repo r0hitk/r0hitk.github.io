@@ -416,6 +416,9 @@ header {
     margin-bottom: 5%;
     width: 100%;
   }
+  .temp {
+    margin-left: 0;
+  }
 }
 
 /* .portfolio {
